@@ -1,0 +1,26 @@
+{
+  "name": "bafang-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js /dev/ttyUSB1 /dev/ttyUSB2",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "test/*",
+      "docs/*"
+    ],
+    "delay": "2500"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serialport": "^9.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
